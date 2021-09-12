@@ -11,7 +11,6 @@
 		C65268AD26E9EF52007BBBBD /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65268AC26E9EF52007BBBBD /* CategoriesView.swift */; };
 		C65268B026E9F269007BBBBD /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65268AF26E9F269007BBBBD /* WebView.swift */; };
 		C65268B226E9FA0E007BBBBD /* ViewToShowWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65268B126E9FA0E007BBBBD /* ViewToShowWebView.swift */; };
-		C65268B626EA10F6007BBBBD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65268B526EA10F6007BBBBD /* Default-568h@2x.png */; };
 		C6531AB126E5F7F300EDDBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6531AB026E5F7F300EDDBE2 /* AppDelegate.swift */; };
 		C6531AB326E5F7F300EDDBE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6531AB226E5F7F300EDDBE2 /* SceneDelegate.swift */; };
 		C6531AB726E5F7FD00EDDBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6531AB626E5F7FD00EDDBE2 /* Assets.xcassets */; };
@@ -32,7 +31,6 @@
 		C65268AC26E9EF52007BBBBD /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		C65268AF26E9F269007BBBBD /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		C65268B126E9FA0E007BBBBD /* ViewToShowWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToShowWebView.swift; sourceTree = "<group>"; };
-		C65268B526EA10F6007BBBBD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C6531AAD26E5F7F300EDDBE2 /* Russia News App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Russia News App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6531AB026E5F7F300EDDBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6531AB226E5F7F300EDDBE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 		C6531AA426E5F7F300EDDBE2 = {
 			isa = PBXGroup;
 			children = (
-				C65268B526EA10F6007BBBBD /* Default-568h@2x.png */,
 				C6531AAF26E5F7F300EDDBE2 /* Russia News App */,
 				C6531AAE26E5F7F300EDDBE2 /* Products */,
 			);
@@ -218,7 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6531ABD26E5F7FD00EDDBE2 /* LaunchScreen.storyboard in Resources */,
-				C65268B626EA10F6007BBBBD /* Default-568h@2x.png in Resources */,
 				C6531ABA26E5F7FD00EDDBE2 /* Preview Assets.xcassets in Resources */,
 				C6531AB726E5F7FD00EDDBE2 /* Assets.xcassets in Resources */,
 			);

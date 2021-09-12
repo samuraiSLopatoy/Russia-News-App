@@ -12,55 +12,33 @@ struct CategoriesView: View {
     
     let newsListViewModel: NewsListViewModel
     
+    private func categoryButton(title: String, category: String) -> Button<Text> {
+        return Button(title) {
+            self.newsListViewModel.getNews(with: category)
+        }
+    }
+    
+    private func button(title: String, with category: String) -> some View {
+        categoryButton(title: title, category: category)
+            .padding(5)
+            .background(Color.green)
+            .cornerRadius(5)
+    }
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             HStack {
-                Button("Бизнес") {
-                    self.newsListViewModel.getNews(with: Categories.business)
-                }
-                .padding(5)
-                .background(Color.green)
-                .cornerRadius(5)
-                
-                
-                Button("Развлечения") {
-                    self.newsListViewModel.getNews(with: Categories.entertainment)
-                }
-                .padding(5)
-                .background(Color.green)
-                .cornerRadius(5)
-                
-                Button("Здоровье") {
-                    self.newsListViewModel.getNews(with: Categories.health)
-                }
-                .padding(5)
-                .background(Color.green)
-                .cornerRadius(5)
+                button(title: "Бизнес", with: Categories.business)
+                button(title: "Развлечения", with: Categories.entertainment)
+                button(title: "Здоровье", with: Categories.health)
             }
             .padding(.leading)
             .foregroundColor(.white)
             
             HStack {
-                Button("Наука") {
-                    self.newsListViewModel.getNews(with: Categories.science)
-                }
-                .padding(5)
-                .background(Color.green)
-                .cornerRadius(5)
-                
-                Button("Спорт") {
-                    self.newsListViewModel.getNews(with: Categories.sports)
-                }
-                .padding(5)
-                .background(Color.green)
-                .cornerRadius(5)
-                
-                Button("Технологии") {
-                    self.newsListViewModel.getNews(with: Categories.technology)
-                }
-                .padding(5)
-                .background(Color.green)
-                .cornerRadius(5)
+                button(title: "Наука", with: Categories.science)
+                button(title: "Спорт", with: Categories.sports)
+                button(title: "Технологии", with: Categories.technology)
             }
             .padding(.leading)
             .foregroundColor(.white)
