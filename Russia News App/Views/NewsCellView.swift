@@ -13,10 +13,8 @@ struct NewsCellView: View {
     let news: NewsViewModel
     let image: Image
     
-    @State private var isPresented: Bool = false
-    
     var body: some View {
-        NavigationLink(destination: ViewToShowWebView(newsUrl: news.url), isActive: $isPresented) {
+        NavigationLink(destination: ViewToShowWebView(newsUrl: news.url)) {
             VStack(alignment: .leading, spacing: 10) {
                 image
                     .resizable()
@@ -39,11 +37,9 @@ struct NewsCellView: View {
                 Text(news.description)
                     .font(.caption)
             }
-            .onTapGesture {
-                self.isPresented.toggle()
-            }
         }
     }
 }
+
 
 
